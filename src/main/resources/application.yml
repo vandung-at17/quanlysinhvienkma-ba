@@ -1,0 +1,27 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+         google:
+          clientId: 200606681857-n84rkc0bcuh0aaisn0nfsb62uk7lu7ce.apps.googleusercontent.com
+          clientSecret: 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
+          scope:
+           - email
+           - profile
+                    
+         facebook:
+          clientId: 292340020020313
+          clientSecret: c9046a89d6e800181a8ab209ef80f33d
+          accessTokenUri: https://graph.facebook.com/oauth/access_token
+          userAuthorizationUri: https://www.facebook.com/dialog/oauth
+          tokenName: oauth_token
+          authenticationScheme: query
+          clientAuthenticationScheme: form
+          scope:
+           - email
+           - public_profile
+twilio:
+   account_sid: AC728ffbb79f835cee32360abd1a2450b2
+   auth_token: f8524828f4b89def4898105117a34db6
+   trial_number: +12524944627
